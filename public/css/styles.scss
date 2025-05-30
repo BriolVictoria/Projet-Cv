@@ -1,0 +1,61 @@
+// Font-Face
+
+@font-face {
+  font-family: "Figtree";
+  src: url(../Font/static/Figtree-Light.ttf) format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url(../Font/static/Figtree-Regular.ttf) format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url(../Font/static/Figtree-Medium.ttf) format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url(../Font/static/Figtree-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url(../Font/static/Figtree-Bold.ttf) format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url(../Font/static/Figtree-ExtraBold.ttf) format("truetype");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url(../Font/static/Figtree-Black.ttf) format("truetype");
+  font-weight: 900;
+}
+
+// Variable de couleur
+
+:root {
+  --noir: #000;
+  --blanc: #fff;
+}
+
+// Style général qui ne bouge pas
+
+body {
+  background-color: var(--noir);
+  color: var(--blanc);
+  font-family: "Figtree", serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}

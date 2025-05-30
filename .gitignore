@@ -1,4 +1,6 @@
-*
 !.gitignore
 !index.html
+node_modules
+package.json
+.idea
 !public
