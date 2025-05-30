@@ -1,5 +1,6 @@
 // Import SCSS
 @import url(header.scss);
+@import url(top-section.scss);
 
 // Font-Face
 
@@ -51,6 +52,8 @@
   --noir: #000;
   --blanc: #fff;
   --fond-header: #19191C;
+  --nav: #A2A2A3;
+  --mauve: #6B57FF;
 }
 
 // Style général qui ne bouge pas
