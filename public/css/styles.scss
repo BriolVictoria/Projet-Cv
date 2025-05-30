@@ -1,3 +1,6 @@
+// Import SCSS
+@import url(header.css);
+
 // Font-Face
 
 @font-face {
@@ -47,6 +50,7 @@
 :root {
   --noir: #000;
   --blanc: #fff;
+  --fond-header: #19191C;
 }
 
 // Style général qui ne bouge pas
