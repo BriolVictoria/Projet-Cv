@@ -1,0 +1,67 @@
+.top_section {
+
+  &__contenu_droite {
+
+    &__image_bouge {
+      position: absolute;
+      right: 0;
+      top: 65px;
+      z-index: -1;
+    }
+
+    &__logo_site {
+      position: absolute;
+      right: 140px;
+      top: 276px;
+    }
+  }
+
+  &__titre {
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 148px;
+    margin-left: 116px;
+    margin-bottom: 40px;
+  }
+
+  &__job_description{
+    font-size: 96px;
+    font-weight: 600;
+    margin-left: 116px;
+    margin-bottom: 45px;
+    margin-top: 0;
+  }
+
+  &__precision_description{
+    font-size: 26px;
+    font-weight: 200;
+    margin-left: 116px;
+    margin-bottom: 52px;
+    margin-top: 0;
+  }
+
+  &__bouton_et_description {
+    display: flex;
+
+    &__bouton_projets {
+      text-decoration: none;
+      color: var(--noir);
+      background-color: var(--blanc);
+      padding: 10.5px 20px;
+      border-radius: 37px;
+      font-weight: 400;
+      margin-left: 116px;
+      margin-bottom: 52px;
+    }
+
+    &__languages_description {
+      margin-bottom: 52px;
+      margin-left: 22px;
+      margin-top: 0;
+      font-size: 24px;
+      font-weight: 400;
+    }
+  }
+
+}
+
