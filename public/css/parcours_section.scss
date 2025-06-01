@@ -30,9 +30,16 @@
   }
 
   &__contenu {
-    display: flex;
     video {
+      flex-shrink: 0;
+      margin-left: 115px;
+    }
+    &__3D_video, &__2D_video{
       width: 766px;
+    }
+
+    &__typo_video, &__graph_video{
+      width: 306px;
     }
 
     &__titre {
@@ -48,8 +55,20 @@
       margin-top: 17px;
     }
 
-
+    &__text_content{
+      flex: 1;
+    }
   }
+  &__contenu__3D, &__contenu__2D, &__contenu__typo, &__contenu__graph {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+    align-items: flex-start;
+  }
+}
+
+.hidden {
+  display: none;
 }
 
 /*

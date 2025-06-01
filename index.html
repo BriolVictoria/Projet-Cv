@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="public/css/styles.scss">
+    <script src="./public/js/main.js"></script>
     <title>Victoria Briol</title>
 </head>
 <body>
@@ -22,7 +23,7 @@
                     <a class="top_header__liens__lien" href="#">Expériences</a>
                     <a class="top_header__liens__lien" href="#">Formulaire</a>
                     <a class="top_header__liens__lien" href="http://victoria-briol.be/">Portfolio</a>
-                    <a class="top_header__liens__lien" href="#section_projet">Projets</a>
+                    <a class="top_header__liens__lien" href="#section_parcours">Parcours</a>
                 </div>
                 <div class="top_header__img">
                     <img class="top_header__img__image" src="./public/img/computer/Logo_rechercher.svg"
@@ -66,11 +67,11 @@
         </div>
     </section>
 
-    <section class="parcours_section" id="section_projet">
+    <section class="parcours_section" id="section_parcours">
         <h2 class="parcours_section__titre">Mon parcours</h2>
 
         <div class="parcours_section__projets">
-            <h3 class="parcours_section__projets_description">Description des projets</h3>
+            <h3 class="parcours_section__projets_description"  id="section_projet">Description des projets</h3>
             <div class="parcours_section__projets_liens">
                 <a class="parcours_section__projets_liens__lien" href="#">Projet 3D</a>
                 <a class="parcours_section__projets_liens__lien" href="#">Projet 2D</a>
@@ -78,8 +79,8 @@
                 <a class="parcours_section__projets_liens__lien" href="#">Projet graphisme</a>
             </div>
             <div class="parcours_section__contenu">
-                <div class="parcours_section__contenu__3D">
-                    <video src="./public/video/computer/Projet_3D.mov" loop autoplay></video>
+                <div class="parcours_section__contenu__3D hidden">
+                    <video class="parcours_section__contenu__3D_video" src="./public/video/computer/Projet_3D.mov" loop autoplay></video>
                     <div class="parcours_section__contenu__text_content">
                     <p class="parcours_section__contenu__titre">Reproduction d’une scène cinéma pour le cours de 3D</p>
                     <p class="parcours_section__contenu__description">J’ai travaillé sur un projet 3D inspiré d’une scène de Wednesday. J’ai choisi le côté sombre du
@@ -90,8 +91,8 @@
 
                 </div>
 
-                <div class="parcours_section__contenu__2D">
-                    <video src="./public/video/computer/Projet_2D.mov" loop autoplay></video>
+                <div class="parcours_section__contenu__2D hidden">
+                    <video class="parcours_section__contenu__2D_video" src="./public/video/computer/Projet_2D.mov" loop autoplay></video>
                     <div class="parcours_section__contenu__text_content">
 
                     <p class="parcours_section__contenu__titre">Reproduction d’un dépliant pour le cours de 2D</p>
@@ -103,8 +104,8 @@
                     </div>
                 </div>
 
-                <div class="parcours_section__contenu__typo">
-                    <video src="./public/video/computer/Projet_typo.mov" loop autoplay></video>
+                <div class="parcours_section__contenu__typo hidden">
+                    <video class="parcours_section__contenu__typo_video" src="./public/video/computer/Projet_typo.mov" loop autoplay></video>
                     <div class="parcours_section__contenu__text_content">
                         <p class="parcours_section__contenu__titre">Reproduction d’une typographie pour le cours de mise en page</p>
                         <p class="parcours_section__contenu__description">Dans ce projet, j'ai exploré l’utilisation de la police Georgia pour créer une typographie
@@ -115,8 +116,8 @@
 
                 </div>
 
-                <div class="parcours_section__contenu__graph">
-                    <video src="./public/video/computer/Projet_graph.mov" loop autoplay></video>
+                <div class="parcours_section__contenu__graph hidden">
+                    <video class="parcours_section__contenu__graph_video" src="./public/video/computer/Projet_graph.mov" loop autoplay></video>
                     <div class="parcours_section__contenu__text_content">
                     <p class="parcours_section__contenu__titre">Reproduction d’icônes pour le cours de graphisme</p>
                     <p class="parcours_section__contenu__description">Dans ce projet de graphisme, j’ai créé une série d'icônes inspirées de l'univers Cobra Kai.
@@ -127,10 +128,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div>
-
         </div>
 
     </section>
