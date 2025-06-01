@@ -1,0 +1,117 @@
+.parcours_section {
+  &__titre {
+    font-size: 70px;
+    font-weight: 600;
+    margin-left: 116px;
+    margin-bottom: 77px;
+  }
+
+  &__projets_description {
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 48px;
+    margin-left: 116px;
+  }
+
+  &__projets_liens {
+    margin-bottom: 58px;
+    margin-left: 116px;
+    &__lien {
+      font-size: 16px;
+      font-weight: 400;
+      text-decoration: none;
+      color: var(--blanc);
+      border: 1px var(--blanc) solid;
+      padding: 10.5px 20px;
+      border-radius: 37px;
+      margin-right: 10px;
+    }
+  }
+
+  &__contenu {
+    display: flex;
+    video {
+      width: 766px;
+    }
+
+    &__titre {
+      font-size: 36px;
+      font-weight: 600;
+      margin-left: 36px;
+    }
+
+    &__description {
+      font-size: 16px;
+      font-weight: 400;
+      margin-left: 36px;
+      margin-top: 17px;
+    }
+
+
+  }
+}
+
+/*
+!*Début du slider infiny*!
+
+.slider-1 {
+  margin: auto;
+  width: 100%;
+  max-width: 100vw;
+}
+
+.slider-1 .slider {
+  display: flex;
+  animation: slider-1 60s infinite linear;
+}
+
+.slider-1 img {
+  background: #000;
+  flex-shrink: 0;
+  width: 50%;
+  object-fit: contain;
+  color: white;
+}
+
+
+@keyframes slider-1 {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(-400%); !* Déplace de 100% pour chaque ensemble d'images *!
+  }
+}
+
+
+<div class="slider-container slider-1">
+<div class="slider">
+<img class="HTML" src="./IMG/COMPUTER/html_name.svg" alt="logo du langage HTML">
+<img class="JS" src="/IMG/COMPUTER/javascript_name.svg" alt="logo du langage JavaScript">
+<img class="CSS" src="/IMG/COMPUTER/css_name.svg" alt="logo du langage CSS">
+<img class="PHP" src="/IMG/COMPUTER/php_name.svg" alt="logo du langage PHP">
+<img class="HTML" src="./IMG/COMPUTER/html_name.svg" alt="logo du langage HTML">
+<img class="JS" src="/IMG/COMPUTER/javascript_name.svg" alt="logo du langage JavaScript">
+<img class="CSS" src="/IMG/COMPUTER/css_name.svg" alt="logo du langage CSS">
+<img class="PHP" src="/IMG/COMPUTER/php_name.svg" alt="logo du langage PHP">
+<img class="HTML" src="./IMG/COMPUTER/html_name.svg" alt="logo du langage HTML">
+<img class="JS" src="/IMG/COMPUTER/javascript_name.svg" alt="logo du langage JavaScript">
+<img class="CSS" src="/IMG/COMPUTER/css_name.svg" alt="logo du langage CSS">
+<img class="PHP" src="/IMG/COMPUTER/php_name.svg" alt="logo du langage PHP">
+<img class="HTML" src="./IMG/COMPUTER/html_name.svg" alt="logo du langage HTML">
+<img class="JS" src="/IMG/COMPUTER/javascript_name.svg" alt="logo du langage JavaScript">
+<img class="CSS" src="/IMG/COMPUTER/css_name.svg" alt="logo du langage CSS">
+<img class="PHP" src="/IMG/COMPUTER/php_name.svg" alt="logo du langage PHP">
+</div>
+</div>
+!*Fin du slider infiny*!*/  //ATTENTION SLIDERRRRRRRRR
