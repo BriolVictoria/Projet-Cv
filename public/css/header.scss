@@ -26,6 +26,11 @@ header {
   //Les éléments du header
     &__all_elements {
         display: flex;
+        justify-content: space-around;
+      &__logo{
+        display: flex;
+        align-items: center;
+      }
     }
 
   //Liens du header
@@ -60,6 +65,7 @@ header {
   //éléments de droite du header
     &__right {
         display: flex;
+      align-items: center;
     }
 
 }
