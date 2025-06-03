@@ -2,6 +2,8 @@
 @import url(header.scss);
 @import url(top-section.scss);
 @import url(parcours_section.scss);
+@import url(formateur_section.scss);
+@import url(demande_section.scss);
 
 // Font-Face
 
@@ -56,6 +58,11 @@
   --nav: #A2A2A3;
   --mauve: #6B57FF;
   --mauve-foncé: #26144D;
+  --mauve-degrade1: #7F0FB5;
+  --mauve-degrade2: #450D81;
+  --rose-degrade1: #B118C4;
+  --rose-degrade2: #5F128B;
+  --fond-mauve: #26144D;
 }
 
 // Style général qui ne bouge pas

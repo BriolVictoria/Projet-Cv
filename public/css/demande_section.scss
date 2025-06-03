@@ -1,0 +1,54 @@
+.demande_section {
+  position: relative;
+  background-image: url('../img/computer/image_fond_banniere.svg'); // adapte le chemin si besoin
+  background-size: 100% auto; // ou 'contain' selon ton besoin
+  background-repeat: no-repeat;
+  background-color: var(--fond-mauve);
+  min-height: 450px;
+  margin-bottom: 102px;
+
+  &__logo {
+    position: absolute;
+    right: 238px;
+    top: 157px;
+    width: 130px;
+  }
+
+  &__titre {
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 102px;
+    padding-left: 96px;
+  }
+
+  &__description {
+    font-size: 24px;
+    font-weight: 300;
+    padding-left: 96px;
+    padding-bottom: 30px;
+    width: 25%;
+    margin-top: 0;
+  }
+
+  &__bouton_container {
+    display: flex;
+
+    &__bouton {
+      background-color: var(--blanc);
+      margin-left: 96px;
+      padding: 13px 21px;
+      text-decoration: none;
+      color: var(--noir);
+      font-size: 16px;
+      font-weight: 700;
+      border-radius: 37px;
+    }
+
+    &__texte_bouton {
+      margin-left: 28.5px;
+      font-size: 13px;
+      font-weight: 300;
+    }
+  }
+
+}
