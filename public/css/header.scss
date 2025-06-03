@@ -9,9 +9,9 @@ header {
   //logo du header
     &__logo {
         width: 35px;
-        margin-left: 119px;
         margin-top: 17px;
         margin-bottom: 23px;
+      margin-left: 150px;
     }
 
   //titre du header
@@ -73,6 +73,7 @@ header {
 //Le bas du header
 .bottom_header {
   display: flex;
+  justify-content: space-around;
 
   //titre du bas du header
   &__titre {
@@ -80,7 +81,8 @@ header {
     font-weight: 600;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 119px;
+    display: flex;
+    align-items: center;
   }
 
   &__liens {
