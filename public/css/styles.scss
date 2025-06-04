@@ -4,6 +4,7 @@
 @import url(parcours_section.scss);
 @import url(formateur_section.scss);
 @import url(demande_section.scss);
+@import url(footer.scss);
 
 // Font-Face
 
@@ -63,6 +64,12 @@
   --rose-degrade1: #B118C4;
   --rose-degrade2: #5F128B;
   --fond-mauve: #26144D;
+  --fond-gris: #19191C;
+  --gris: #303033;
+  --gris-clair: #b6b6b8;
+  --gris-moyen: #414143;
+  --gris-titre: #BBBBBC;
+  --gris-texte: #A2A2A3;
 }
 
 // Style général qui ne bouge pas
