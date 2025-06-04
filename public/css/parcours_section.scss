@@ -1,11 +1,39 @@
 .parcours_section {
-  &__titre {
-    font-size: 70px;
-    font-weight: 600;
+  &__titre_container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
     margin-left: 116px;
     margin-bottom: 77px;
   }
 
+  &__titre_container__titre {
+    font-size: 70px;
+    font-weight: 600;
+  }
+
+  &__titre_container__vertical {
+    height: 1.1em;
+    overflow: hidden;
+    position: relative;
+    font-size: 70px;
+    color: #6855F9;
+    font-weight: bold;
+    line-height: 1.1em;
+
+    &__mots {
+      display: flex;
+      flex-direction: column;
+      animation: slideSnap 6s infinite;
+    }
+
+    &__mots p {
+      margin: 0;
+      height: 1.1em;
+      line-height: 1.1em;
+      text-align: left;
+    }
+  }
   &__projets_description {
     font-size: 40px;
     font-weight: 500;
@@ -211,4 +239,19 @@
     transform: translateX(-400%); /*!* Déplace de 100% pour chaque ensemble d'images *!*/
   }
 }
-/*!*Fin du slider infiny*!  //ATTENTION SLIDERRRRRRRRR*/
+
+
+
+
+/* Animation glissante + pause */
+@keyframes slideSnap {
+  0%   { transform: translateY(0); }
+  16%  { transform: translateY(-1.1em); }
+  33%  { transform: translateY(-1.1em); }
+  49%  { transform: translateY(-2.2em); }
+  66%  { transform: translateY(-2.2em); }
+  82%  { transform: translateY(-3.3em); }
+  100% { transform: translateY(-3.3em); }
+}
+
+
