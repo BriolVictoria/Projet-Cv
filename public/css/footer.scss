@@ -102,10 +102,26 @@
             border: none;
             min-height: 40px;
             padding-left: 10px;
+            color: var(--gris-clair);
           }
           &__input::placeholder{
             color: var(--gris-clair);
           }
+          textarea {
+            padding-top: 10px;
+
+          }
+        }
+
+        &__button {
+          font-size: 16px;
+          font-weight: 600;
+          background-color: var(--blanc);
+          color: var(--noir);
+          padding: 15px 30px;
+          margin-top: 23px;
+          border-radius: 37px;
+          border:none;
         }
 
       }
@@ -168,6 +184,8 @@
       }
     }
   }
+}
 
-
+.jetbrains {
+  color: var(--gris-texte);
 }

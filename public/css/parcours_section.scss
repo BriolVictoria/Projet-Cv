@@ -171,8 +171,8 @@
   display: none;
 }
 
-/*
-!*Début du slider infiny*!
+
+/*!*Début du slider infiny*!*/
 
 .slider-1 {
   margin: auto;
@@ -188,7 +188,7 @@
 .slider-1 img {
   background: #000;
   flex-shrink: 0;
-  width: 50%;
+  width: 15%;
   object-fit: contain;
   color: white;
 }
@@ -208,29 +208,7 @@
     transform: translateX(-300%);
   }
   100% {
-    transform: translateX(-400%); !* Déplace de 100% pour chaque ensemble d'images *!
+    transform: translateX(-400%); /*!* Déplace de 100% pour chaque ensemble d'images *!*/
   }
 }
-
-
-<div class="slider-container slider-1">
-<div class="slider">
-<img class="HTML" src="./IMG/COMPUTER/html_name.svg" alt="logo du langage HTML">
-<img class="JS" src="/IMG/COMPUTER/javascript_name.svg" alt="logo du langage JavaScript">
-<img class="CSS" src="/IMG/COMPUTER/css_name.svg" alt="logo du langage CSS">
-<img class="PHP" src="/IMG/COMPUTER/php_name.svg" alt="logo du langage PHP">
-<img class="HTML" src="./IMG/COMPUTER/html_name.svg" alt="logo du langage HTML">
-<img class="JS" src="/IMG/COMPUTER/javascript_name.svg" alt="logo du langage JavaScript">
-<img class="CSS" src="/IMG/COMPUTER/css_name.svg" alt="logo du langage CSS">
-<img class="PHP" src="/IMG/COMPUTER/php_name.svg" alt="logo du langage PHP">
-<img class="HTML" src="./IMG/COMPUTER/html_name.svg" alt="logo du langage HTML">
-<img class="JS" src="/IMG/COMPUTER/javascript_name.svg" alt="logo du langage JavaScript">
-<img class="CSS" src="/IMG/COMPUTER/css_name.svg" alt="logo du langage CSS">
-<img class="PHP" src="/IMG/COMPUTER/php_name.svg" alt="logo du langage PHP">
-<img class="HTML" src="./IMG/COMPUTER/html_name.svg" alt="logo du langage HTML">
-<img class="JS" src="/IMG/COMPUTER/javascript_name.svg" alt="logo du langage JavaScript">
-<img class="CSS" src="/IMG/COMPUTER/css_name.svg" alt="logo du langage CSS">
-<img class="PHP" src="/IMG/COMPUTER/php_name.svg" alt="logo du langage PHP">
-</div>
-</div>
-!*Fin du slider infiny*!*/  //ATTENTION SLIDERRRRRRRRR
+/*!*Fin du slider infiny*!  //ATTENTION SLIDERRRRRRRRR*/
