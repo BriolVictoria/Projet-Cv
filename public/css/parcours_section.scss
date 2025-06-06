@@ -199,6 +199,19 @@
   display: none;
 }
 
+@keyframes rotation-infinie {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: rotation-infinie 120s linear infinite;
+}
+
 
 /*!*Début du slider infiny*!*/
 
@@ -206,6 +219,7 @@
   margin: auto;
   width: 100%;
   max-width: 100vw;
+  overflow-x: hidden;
 }
 
 .slider-1 .slider {
