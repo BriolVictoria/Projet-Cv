@@ -5,6 +5,12 @@
     gap: 1rem;
     margin-left: 116px;
     margin-bottom: 77px;
+
+    @media (max-width: 1277px) {
+      margin-left: 80px;
+      margin-bottom: 50px;
+      gap: 0.6rem;
+    }
   }
 
   &__titre_container__titre {
@@ -40,11 +46,21 @@
     margin-top: 0;
     margin-bottom: 48px;
     margin-left: 116px;
+
+    @media (max-width: 1277px) {
+      margin-left: 80px;
+      margin-bottom: 30px;
+    }
   }
 
   &__projets_liens {
     margin-bottom: 58px;
     margin-left: 116px;
+
+    @media (max-width: 1277px) {
+      margin-left: 80px;
+      margin-bottom: 40px;
+    }
     &__lien {
       font-size: 16px;
       font-weight: 400;
@@ -54,6 +70,11 @@
       padding: 10.5px 20px;
       border-radius: 37px;
       margin-right: 10px;
+
+      @media (max-width: 1277px) {
+        margin-right: 6px;
+        padding: 8px 16px;
+      }
     }
   }
 
@@ -61,19 +82,35 @@
     video {
       flex-shrink: 0;
       margin-left: 115px;
+
+      @media (max-width: 1277px) {
+        margin-left: 80px;
+      }
     }
     &__3D_video, &__2D_video{
       width: 766px;
+
+      @media (max-width: 1277px) {
+        width: 600px;
+      }
     }
 
     &__typo_video, &__graph_video{
       width: 306px;
+
+      @media (max-width: 1277px) {
+        width: 250px;
+      }
     }
 
     &__titre {
       font-size: 36px;
       font-weight: 600;
       margin-left: 36px;
+
+      @media (max-width: 1277px) {
+        margin-left: 20px;
+      }
     }
 
     &__description {
@@ -82,6 +119,11 @@
       margin-left: 36px;
       margin-top: 17px;
       width: 84%;
+
+      @media (max-width: 1277px) {
+        margin-left: 20px;
+        width: 90%;
+      }
     }
 
     &__text_content{
@@ -93,6 +135,12 @@
     gap: 20px;
     margin-bottom: 40px;
     align-items: flex-start;
+
+
+    @media (max-width: 1277px) {
+      gap: 10px;
+      margin-bottom: 30px;
+    }
   }
 
   &__langage {
@@ -100,6 +148,10 @@
       font-size: 36px;
       font-weight: 600;
       margin-left: 115px;
+
+      @media (max-width: 1277px) {
+        margin-left: 80px;
+      }
     }
 
     &__text_content {
@@ -109,6 +161,12 @@
       padding: 34px 23px 33px;
       border-radius: 16.5px;
 
+      @media (max-width: 1277px) {
+        margin: 30px 60px 30px 80px;
+        padding: 20px 15px 20px;
+        gap: 20px; // réduit l'espace entre description et images
+      }
+
       &__description {
         font-size: 16px;
         font-weight: 400;
@@ -116,6 +174,10 @@
         margin-top: 17px;
         margin-right: 40px;
         width: 60%;
+
+        @media (max-width: 1277px) {
+          width: 60%; // autorise le shrink si besoin
+        }
       }
 
       &__image_content {
@@ -129,6 +191,12 @@
         align-items: center;
         width: 70px;
         height: 80px;
+
+        @media (max-width: 1277px) {
+          width: 60px;
+          height: 70px;
+          padding: 15px;
+        }
       }
 
       &__images{
@@ -144,10 +212,19 @@
       font-size: 36px;
       font-weight: 600;
       margin-left: 115px;
+
+      @media (max-width: 1277px) {
+        margin-left: 80px;
+      }
     }
     &__liens {
       margin-bottom: 58px;
       margin-left: 116px;
+
+      @media (max-width: 1277px) {
+        margin-left: 80px;
+        margin-bottom: 40px;
+      }
       &__lien {
         font-size: 16px;
         font-weight: 400;
@@ -157,6 +234,11 @@
         padding: 10.5px 20px;
         border-radius: 37px;
         margin-right: 10px;
+
+        @media (max-width: 1277px) {
+          margin-right: 6px;
+          padding: 8px 16px;
+        }
       }
     }
 
@@ -165,12 +247,21 @@
         flex-shrink: 0;
         margin-left: 115px;
         width: 756px;
+
+        @media (max-width: 1277px) {
+          margin-left: 80px;
+          width: 600px;
+        }
       }
 
       &__titre {
         font-size: 36px;
         font-weight: 600;
         margin-left: 36px;
+
+        @media (max-width: 1277px) {
+          margin-left: 20px;
+        }
       }
 
       &__description {
@@ -179,6 +270,11 @@
         margin-left: 36px;
         margin-top: 17px;
         width: 84%;
+
+        @media (max-width: 1277px) {
+          margin-left: 20px;
+          width: 90%;
+        }
       }
 
       &__text_content{
@@ -191,6 +287,11 @@
       gap: 20px;
       margin-bottom: 40px;
       align-items: flex-start;
+
+      @media (max-width: 1277px) {
+        gap: 10px;
+        margin-bottom: 30px;
+      }
     }
   }
 }

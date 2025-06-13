@@ -1,74 +1,67 @@
 //Le header
 header {
-    background-color: var(--fond-header);
+  background-color: var(--fond-header);
 }
 
 //Le haut du header
 .top_header {
   border-bottom: 1px var(--nav) solid;
-  //logo du header
+
+  &__logo {
+    width: 35px;
+    margin-top: 17px;
+    margin-bottom: 23px;
+    margin-left: 150px;
+  }
+
+  &__titre {
+    margin-left: 7px;
+    font-size: 22px;
+    font-weight: 900;
+    margin-top: 25px;
+    margin-bottom: 23px;
+  }
+
+  &__all_elements {
+    display: flex;
+    justify-content: space-around;
+
     &__logo {
-        width: 35px;
-        margin-top: 17px;
-        margin-bottom: 23px;
-      margin-left: 150px;
-    }
-
-  //titre du header
-    &__titre {
-        margin-left: 7px;
-        font-size: 22px;
-        font-weight: 900;
-        margin-top: 25px;
-        margin-bottom: 23px;
-    }
-
-  //Les éléments du header
-    &__all_elements {
-        display: flex;
-        justify-content: space-around;
-      &__logo{
-        display: flex;
-        align-items: center;
-      }
-    }
-
-  //Liens du header
-    &__liens {
-        font-size: 23px;
-        font-weight: 300;
-        margin-top: 23px;
-        margin-bottom: 23px;
-
-        &__lien {
-            text-decoration: none;
-            color: var(--nav);
-            margin-left: 23px;
-            margin-bottom: 23px;
-
-        }
-    }
-
-  //Icones du header
-    &__img {
-        display: flex;
-      align-items: center;
-
-        &__image {
-            width: 16px;
-            margin-left: 23px;
-            margin-top: 23px;
-            margin-bottom: 23px;
-
-        }
-    }
-
-  //éléments de droite du header
-    &__right {
-        display: flex;
+      display: flex;
       align-items: center;
     }
+  }
 
+  &__liens {
+    font-size: 23px;
+    font-weight: 300;
+    margin-top: 23px;
+    margin-bottom: 23px;
+
+    &__lien {
+      text-decoration: none;
+      color: var(--nav);
+      margin-left: 23px;
+      margin-bottom: 23px;
+    }
+  }
+
+  &__img {
+    display: flex;
+    align-items: center;
+
+    &__image {
+      width: 16px;
+      margin-left: 23px;
+      margin-top: 23px;
+      margin-bottom: 23px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+  }
 }
 
 //Le bas du header
@@ -76,7 +69,6 @@ header {
   display: flex;
   justify-content: space-around;
 
-  //titre du bas du header
   &__titre {
     font-size: 20px;
     font-weight: 600;
@@ -96,7 +88,6 @@ header {
       text-decoration: none;
       color: var(--nav);
       margin-left: 18px;
-
     }
 
     &__lien_box_border {
@@ -116,5 +107,61 @@ header {
       margin-left: 18px;
       border-radius: 37px;
     }
+  }
+}
+@media screen and (max-width: 450px) {
+  header {
+    background-color: var(--fond-header);
+  }
+
+  .top_header__all_elements {
+    flex-direction: column;
+    align-items: flex-start; // ou center selon ton design
+    gap: 10px; // optionnel pour espacer les éléments
+  }
+
+  .bottom_header {
+    flex-direction: column;
+    align-items: flex-start; // ou center
+    gap: 10px;
+  }
+
+  .top_header__all_elements__logo {
+    display: none;
+  }
+
+  .top_header__right {
+    display: none;
+  }
+
+  .bottom_header__titre {
+    border-bottom: 1.5px var(--nav) solid;
+    margin-top: 0;
+    padding-top: 15px;
+    padding-bottom: 15.5px;
+    padding-left: 16.5px;
+    font-weight: 600;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .bottom_header__liens__lien_texte,
+  .bottom_header__liens__lien_box_border {
+    display: none;
+  }
+
+  .bottom_header__liens {
+    margin: 0;
+
+  }
+  .bottom_header__liens__lien_box_background {
+    text-decoration: none;
+    color: var(--blanc);
+    background-color: var(--mauve);
+    padding: 10.5px 20px;
+    border-radius: 37px;
+    display: block;
+    margin: 0 auto 13px 325px;
   }
 }

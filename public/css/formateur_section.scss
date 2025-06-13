@@ -5,6 +5,16 @@
     margin-top: 142px;
     margin-bottom: 25px;
     margin-left: 123px;
+
+    @media (max-width: 1277px) {
+      margin-left: 80px;
+      font-size: 42px;
+    }
+
+    @media (max-width: 768px) {
+      text-align: center;
+      margin-left: 0;
+    }
   }
 
   &__container {
@@ -16,6 +26,16 @@
       margin-left: 115px;
       margin-bottom: 171px;
       border-radius: 13.5px;
+
+      @media (max-width: 1277px) {
+        margin-left: 0;
+        padding: 10px;
+      }
+
+      @media (max-width: 768px) {
+        margin-bottom: 40px;
+        width: 100%;
+      }
     }
 
     &__box_SS {
@@ -24,6 +44,16 @@
       margin-left: 67px;
       margin-bottom: 171px;
       border-radius: 13.5px;
+
+      @media (max-width: 1277px) {
+        margin-left: 0;
+        padding: 10px;
+      }
+
+      @media (max-width: 768px) {
+        margin-bottom: 40px;
+        width: 100%;
+      }
     }
 
     &__titre {
@@ -32,6 +62,10 @@
       margin-top: 18px;
       font-weight: 600;
       margin-bottom: 0;
+
+      @media (max-width: 768px) {
+        font-size: 18px;
+      }
     }
 
     &__email {
@@ -47,6 +81,10 @@
       margin-left: 12px;
       margin-top: 18px;
       font-weight: 400;
+
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
     }
 
     &__lien {
