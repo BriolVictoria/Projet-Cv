@@ -369,4 +369,204 @@
   100% { transform: translateY(-3.3em); }
 }
 
+@media (max-width: 540px) {
+  .parcours_section {
+    &__titre_container {
+      display: flex;
+      flex-direction: column; // <-- ici !
+      align-items: flex-start; // ou center selon besoin
+      gap: 1rem;
+      margin-left: 14px;
+      margin-bottom: 77px;
+    }
+
+    &__titre_container__titre {
+      font-size: 42px;
+      font-weight: 600;
+      margin-top: 28px;
+      margin-bottom: 0;
+    }
+
+    &__titre_container__vertical {
+      height: 1.1em;
+      overflow: hidden;
+      position: relative;
+      font-size: 42px;
+      color: #6855F9;
+      font-weight: bold;
+      line-height: 1.1em;
+
+      &__mots {
+        display: flex;
+        flex-direction: column;
+        animation: slideSnap 6s infinite;
+      }
+
+      &__mots p {
+        margin: 0;
+        height: 1.1em;
+        line-height: 1.1em;
+        text-align: left;
+      }
+    }
+
+    &__projets_description {
+      font-size: 28px;
+      font-weight: 500;
+      margin-top: 0;
+      margin-bottom: 48px;
+      margin-left: 14px;
+    }
+
+    &__projets_liens {
+      display: none;
+    }
+
+    &__contenu {
+      display: flex;
+      flex-direction: row; /* horizontal */
+      gap: 20px; /* espace entre les éléments */
+      overflow-x: auto; /* scroll horizontal */
+      scroll-snap-type: x mandatory; /* scroll snap horizontal */
+      -webkit-overflow-scrolling: touch; /* scroll fluide sur iOS */
+
+
+      video {
+        flex-shrink: 0;
+        margin-left: 14px;
+      }
+
+      &__3D_video, &__2D_video {
+        width: 357px;
+        border-radius: 10px;
+        margin-right: 50px;
+      }
+
+      &__typo_video, &__graph_video {
+        width: 250px;
+        border-radius: 10px;
+        margin-right: 50px;
+
+      }
+
+      &__titre {
+        font-size: 20px;
+        font-weight: 600;
+        margin-left: 14px;
+        width: 82%;
+      }
+
+      &__description {
+        font-size: 16px;
+        font-weight: 400;
+        margin-left: 14px;
+        margin-top: 17px;
+        width: 84%;
+      }
+
+      &__text_content {
+        flex: 1;
+      }
+    }
+
+    &__langage {
+      &__titre {
+        font-size: 28px;
+        font-weight: 600;
+        margin-left: 14px;
+      }
+
+      &__text_content {
+        background-color: var(--mauve-foncé);
+        display: flex;
+        flex-direction: column; /* colonne : images puis texte */
+        margin: 26px 17px 47px 14px;
+        padding: 18px 18px 23px;
+        border-radius: 16.5px;
+
+        &__description {
+          font-size: 16px;
+          font-weight: 400;
+          margin-left: 14px;          /* texte aligné à gauche, décalé */
+          margin-top: 0;
+          width: auto;
+          text-align: left;
+        }
+
+        &__image_content {
+          padding: 25px;
+          border-radius: 10px;
+          background-color: var(--noir);
+          width: 50%;                /* remplir la cellule de la grille */
+          height: 80px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        &__images {
+          display: grid;               /* passer en grid pour gérer les colonnes */
+          grid-template-columns: repeat(2, 1fr); /* 2 colonnes égales */
+          gap: 15px;                  /* espace entre les images */
+          margin-bottom: 20px;
+        }
+      }
+
+    }
+
+
+    &__expériences {
+      &__titre {
+        font-size: 20px;
+        font-weight: 600;
+        margin-left: 14px;
+      }
+      &__liens {
+        display: none;
+      }
+
+      &__contenu {
+        display: flex;
+        flex-direction: row; /* horizontal */
+        gap: 20px; /* espace entre les éléments */
+        overflow-x: auto; /* scroll horizontal */
+        scroll-snap-type: x mandatory; /* scroll snap horizontal */
+        -webkit-overflow-scrolling: touch; /* scroll fluide sur iOS */
+        video {
+          flex-shrink: 0;
+          margin-left: 14px;
+          width: 300px;
+
+        }
+
+        &__titre {
+          font-size: 20px;
+          font-weight: 600;
+          margin-left: 14px;
+          width: 82%;
+
+        }
+
+        &__description {
+          font-size: 16px;
+          font-weight: 400;
+          margin-left: 14px;
+          margin-top: 17px;
+          width: 84%;
+
+        }
+
+        &__text_content{
+          flex: 1;
+        }
+        &__contenu__philmode, &__contenu__baby, &__contenu__lws {
+          border-radius: 10px;
+          margin-right: 50px;
+
+        }
+      }
+    }
+  }
+}
+
 
