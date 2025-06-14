@@ -51,4 +51,55 @@
     }
   }
 
+  // MEDIA QUERY MOBILE
+  @media (max-width: 450px) {
+    background-image: url('../img/phone/image_fond_tel.svg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: var(--fond-mauve);
+    min-height: 450px;
+    margin-bottom: 102px;
+
+    &__logo {
+      right: 350px;
+      top: 70px;
+      width: 75px;
+    }
+
+    &__titre {
+      font-size: 40px;
+      font-weight: 600;
+      padding-top: 170px;
+      padding-left: 25px;
+      margin-bottom: 0;
+    }
+
+    &__description {
+      font-size: 24px;
+      font-weight: 300;
+      padding-left: 30px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      width: 86%;
+      margin-top: 0;
+    }
+
+    &__bouton_container {
+      flex-direction: column;
+      align-items: flex-start;
+
+      &__bouton {
+        margin-left: 30px;
+        padding: 13px 21px;
+        font-weight: 500;
+      }
+
+      &__texte_bouton {
+        margin-left: 38.5px;
+        margin-top: 20px;
+        font-size: 13px;
+        font-weight: 300;
+      }
+    }
+  }
 }

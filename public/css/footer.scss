@@ -18,6 +18,7 @@
         padding: 20px 41px;
         margin-top: 23px;
         border-radius: 37px;
+        text-decoration: none;
       }
     }
     &__contenu_gauche {
@@ -185,6 +186,136 @@
     }
   }
 }
+@media (max-width: 450px) {
+  .footer_section {
+    &__more_info {
+      flex-direction: column;
+
+      &__contenu_droite {
+        &__titre {
+          font-size: 28px;
+          margin-left: 14px;
+          width: 90%;
+        }
+
+        &__bouton {
+          font-size: 18px;
+          margin-left: 14px;
+          padding: 15px 30px;
+          width: fit-content;
+        }
+      }
+
+      &__contenu_gauche {
+
+        &__titre_contact {
+          font-size: 18px;
+          margin-left: 14px;
+        }
+
+        &__container {
+          flex-direction: column;
+          align-items: flex-start;
+          margin-left: 14px;
+
+          &__image {
+            margin-bottom: 10px;
+          }
+
+          &__lien {
+            font-size: 14px;
+          }
+        }
+      }
+
+      &__contenu_gauche_bis {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+      }
+    }
+
+    &__bottom_header {
+      &__container {
+        flex-direction: column;
+        align-items: flex-start;
+
+        &__faq {
+          &__titre {
+            font-size: 28px;
+            margin-left: 14px;
+            margin-top: 60px;
+          }
+
+          &__question {
+            font-size: 18px;
+            margin-left: 14px;
+          }
+        }
+
+        &__form {
+          margin-right: 0;
+          margin-left: 14px;
+
+          &__titre {
+            font-size: 28px;
+            margin-top: 60px;
+          }
+
+          &__container {
+            width: 90%;
+
+            &__input {
+              width: 100%;
+            }
+
+            textarea {
+              width: 100%;
+            }
+          }
+
+          &__button {
+            width: fit-content;
+            padding: 12px 24px;
+          }
+        }
+      }
+
+      &__ressources {
+        &__titre {
+          font-size: 20px;
+          margin-left: 14px;
+        }
+
+        &__liens {
+          &__lien {
+            margin-left: 14px;
+            font-size: 14px;
+          }
+        }
+      }
+
+      &__last_elements {
+        &__container {
+          margin-left: 14px;
+        }
+
+        &__down_footer {
+          flex-direction: column;
+          align-items: flex-start;
+
+          &__copyright,
+          &__autre {
+            margin-left: 14px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
 
 .jetbrains {
   color: var(--gris-texte);
