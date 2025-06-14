@@ -23,7 +23,7 @@
     @media (max-width: 760px) {
       flex-direction: column;
       align-items: flex-start;
-      margin-left: 100px;
+      margin-left: 15px;
       margin-bottom: 77px;
 
     }
@@ -44,6 +44,7 @@
     @media (max-width: 1160px) {
       font-size: 50px;
     }
+
     @media (max-width: 450px) {
       font-size: 40px;
     }
@@ -71,6 +72,10 @@
       text-align: left;
     }
 
+    @media (max-width: 660px) {
+      font-size: 55px;
+    }
+
     @media (max-width: 450px) {
       font-size: 40px;
     }
@@ -87,7 +92,7 @@
       margin-left: 80px;
       margin-bottom: 30px;
     }
-    @media (max-width: 450px) {
+    @media (max-width: 900px) {
       margin-left: 14px;
       font-size: 24px;
       margin-bottom: 30px;
@@ -102,7 +107,7 @@
       margin-left: 80px;
       margin-bottom: 40px;
     }
-    @media (max-width: 450px) {
+    @media (max-width: 900px) {
       margin-left: 14px;
       margin-bottom: 40px;
     }
@@ -121,7 +126,7 @@
         margin-right: 6px;
         padding: 8px 16px;
       }
-      @media (max-width: 450px) {
+      @media (max-width: 900px) {
         font-size: 14px;
         margin-right: 6px;
         padding: 8px 16px;
@@ -137,9 +142,9 @@
       @media (max-width: 1277px) {
         margin-left: 80px;
       }
-      @media (max-width: 450px) {
+      @media (max-width: 900px) {
         margin-left: 14px;
-        width: 100%; // Pour que la vidéo soit responsive
+        width: 400px; // Pour que la vidéo soit responsive
       }
     }
 
@@ -150,8 +155,12 @@
       @media (max-width: 1277px) {
         width: 600px;
       }
-      @media (max-width: 450px) {
-        width: 100%;
+
+      @media (max-width: 1070px) {
+        width: 415px;
+      }
+      @media (max-width: 900px) {
+        width: 400px
       }
     }
 
@@ -162,7 +171,7 @@
       @media (max-width: 1277px) {
         width: 250px;
       }
-      @media (max-width: 450px) {
+      @media (max-width: 900px) {
         width: 100%;
       }
     }
@@ -175,7 +184,7 @@
       @media (max-width: 1277px) {
         margin-left: 20px;
       }
-      @media (max-width: 450px) {
+      @media (max-width: 900px) {
         margin-left: 14px;
         font-size: 24px;
       }
@@ -192,7 +201,7 @@
         margin-left: 20px;
         width: 90%;
       }
-      @media (max-width: 450px) {
+      @media (max-width: 900px) {
         margin-left: 14px;
         width: 100%;
         font-size: 14px;
@@ -217,7 +226,7 @@
       gap: 10px;
       margin-bottom: 30px;
     }
-    @media (max-width: 450px) {
+    @media (max-width: 900px) {
       flex-direction: column;
       gap: 10px;
       margin-bottom: 30px;
@@ -320,7 +329,7 @@
       @media (max-width: 1277px) {
         margin-left: 80px;
       }
-      @media (max-width: 450px) {
+      @media (max-width: 900px) {
         margin-left: 14px;
         font-size: 24px;
       }
@@ -334,7 +343,7 @@
         margin-left: 80px;
         margin-bottom: 40px;
       }
-      @media (max-width: 450px) {
+      @media (max-width: 900px) {
         margin-left: 14px;
         margin-bottom: 40px;
       }
@@ -353,11 +362,12 @@
           margin-right: 6px;
           padding: 8px 16px;
         }
-        @media (max-width: 450px) {
+        @media (max-width: 900px) {
           font-size: 14px;
           margin-right: 6px;
           padding: 8px 16px;
         }
+
       }
     }
 
@@ -371,7 +381,7 @@
           margin-left: 80px;
           width: 600px;
         }
-        @media (max-width: 450px) {
+        @media (max-width: 900px) {
           margin-left: 14px;
           width: 100%;
         }
@@ -385,7 +395,7 @@
         @media (max-width: 1277px) {
           margin-left: 20px;
         }
-        @media (max-width: 450px) {
+        @media (max-width: 900px) {
           margin-left: 14px;
           font-size: 24px;
         }
@@ -402,7 +412,7 @@
           margin-left: 20px;
           width: 90%;
         }
-        @media (max-width: 450px) {
+        @media (max-width: 900px) {
           margin-left: 14px;
           width: 100%;
           font-size: 14px;
@@ -426,7 +436,7 @@
         gap: 10px;
         margin-bottom: 30px;
       }
-      @media (max-width: 450px) {
+      @media (max-width: 900px) {
         flex-direction: column;
         gap: 10px;
         margin-bottom: 30px;
@@ -576,10 +586,6 @@
       margin-top: 0;
       margin-bottom: 48px;
       margin-left: 14px;
-    }
-
-    &__projets_liens {
-      display: none;
     }
 
     &__contenu {
@@ -732,4 +738,21 @@
   }
 }
 
+
+@media (max-width: 900px) {
+  .parcours_section__contenu__3D, .parcours_section__contenu__2D, .parcours_section__contenu__typo, .parcours_section__contenu__graph {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+    align-items: flex-start;
+
+  }
+}
+
+
+@media (max-width: 480px) {
+  .parcours_section__projets_liens__lien {
+    font-size: 12px;
+  }
+}
 
