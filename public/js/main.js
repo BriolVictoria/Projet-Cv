@@ -35,3 +35,13 @@ boutons.forEach(bouton => {
         });
     });
 });
+
+const burgerBtn = document.querySelector('.burger');
+const menu = document.querySelector('.menu');
+
+burgerBtn.addEventListener('click', () => {
+    menu.classList.toggle('active');
+
+    const expanded = burgerBtn.getAttribute('aria-expanded') === 'true';
+    burgerBtn.setAttribute('aria-expanded', !expanded);
+});

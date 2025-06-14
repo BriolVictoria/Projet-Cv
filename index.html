@@ -11,6 +11,28 @@
 </head>
 <body>
 <header>
+
+    <!-- Bouton burger visible en mobile -->
+    <button class="burger" aria-expanded="false" aria-label="Menu principal" aria-controls="menu">
+        <svg class="burger__icon" width="30" height="30" viewBox="0 0 30 30" fill="none">
+            <path class="burger__line" d="M6 9H24" stroke-width="2" stroke="#fff"/>
+            <path class="burger__line" d="M6 15H24" stroke-width="2" stroke="#fff"/>
+            <path class="burger__line" d="M6 21H24" stroke-width="2" stroke="#fff"/>
+        </svg>
+    </button>
+
+    <!-- Menu mobile -->
+    <nav class="menu" id="menu">
+        <a class="menu__link" href="#section_formateur">Avis formateurs</a>
+        <a class="menu__link" href="#section_exprerience">Expériences</a>
+        <a class="menu__link" href="#section_formulaire">Formulaire</a>
+        <a class="menu__link" href="http://victoria-briol.be/">Portfolio</a>
+        <a class="menu__link" href="#section_parcours">Parcours</a>
+        <a class="menu__link" href="#section_ressources">Ressources</a>
+        <a class="menu__link" href="#section_projet">Projets</a>
+        <a class="menu__link" href="#propos">À propos</a>
+    </nav>
+
     <section class="top_header">
         <div class="top_header__all_elements">
             <div class="top_header__all_elements__logo">
@@ -28,12 +50,15 @@
                     <a class="top_header__liens__lien" href="#section_parcours">Parcours</a>
                 </div>
                 <div class="top_header__img">
-                    <a href="#section_formulaire"><img class="top_header__img__image" src="./public/img/computer/Contact_logo.svg"
-                                    alt="Logo de loupe pour faire un contact"></a>
-                    <a href="#section_parcours"><img class="top_header__img__image" src="./public/img/computer/Logo_travail.svg"
-                                    alt="Logo du malette pour un travail"></a>
-                    <a href="#section_projet"><img class="top_header__img__image" src="./public/img/computer/Logo_savoirfaire.svg"
-                                    alt="Logo d'une applu pour montrer le savoir faire"></a>
+                    <a href="#section_formulaire"><img class="top_header__img__image"
+                                                       src="./public/img/computer/Contact_logo.svg"
+                                                       alt="Logo de loupe pour faire un contact"></a>
+                    <a href="#section_parcours"><img class="top_header__img__image"
+                                                     src="./public/img/computer/Logo_travail.svg"
+                                                     alt="Logo du malette pour un travail"></a>
+                    <a href="#section_projet"><img class="top_header__img__image"
+                                                   src="./public/img/computer/Logo_savoirfaire.svg"
+                                                   alt="Logo d'une applu pour montrer le savoir faire"></a>
                 </div>
             </div>
         </div>
@@ -52,7 +77,8 @@
 <main>
     <section class="top_section" id="propos">
         <div class="top_section__contenu_droite">
-            <img class="top_section__contenu_droite__image_bouge rotate" src="./public/img/computer/Image_fond_bouge.svg"
+            <img class="top_section__contenu_droite__image_bouge rotate"
+                 src="./public/img/computer/Image_fond_bouge.svg"
                  alt="Image qui bouge sans arrêt avec beaucoup de couleur">
             <img class="top_section__contenu_droite__logo_site" src="./public/img/computer/Logo_VB.svg"
                  alt="Logo sur fond noir avec VB initial de Victoria Briol">
@@ -477,7 +503,9 @@
                                       name="message" id="message" cols="30" rows="5"
                                       placeholder="Votre message... "></textarea>
                         </div>
-                        <button class="footer_section__bottom_header__container__form__button" type="submit">Envoyer le formulaire</button>
+                        <button class="footer_section__bottom_header__container__form__button" type="submit">Envoyer le
+                            formulaire
+                        </button>
 
                     </form>
 
@@ -487,33 +515,43 @@
             <div class="footer_section__bottom_header__ressources" id="section_ressources">
                 <h4 class="footer_section__bottom_header__ressources__titre">Resources</h4>
                 <div class="footer_section__bottom_header__ressources__liens">
-                    <a class="footer_section__bottom_header__ressources__liens__lien" href="https://www.jetbrains.com/phpstorm/">https://www.jetbrains.com/phpstorm/</a>
+                    <a class="footer_section__bottom_header__ressources__liens__lien"
+                       href="https://www.jetbrains.com/phpstorm/">https://www.jetbrains.com/phpstorm/</a>
                     <a class="footer_section__bottom_header__ressources__liens__lien" href="https://typescale.com/">https://typescale.com/</a>
                     <a class="footer_section__bottom_header__ressources__liens__lien" href="https://gtmetrix.com/">https://gtmetrix.com/</a>
-                    <a class="footer_section__bottom_header__ressources__liens__lien" href="https://checklists.opquast.com/fr/assurance-qualite-web/">https://checklists.opquast.com/fr/assurance-qualite-web/</a>
+                    <a class="footer_section__bottom_header__ressources__liens__lien"
+                       href="https://checklists.opquast.com/fr/assurance-qualite-web/">https://checklists.opquast.com/fr/assurance-qualite-web/</a>
 
                 </div>
             </div>
             <div class="footer_section__bottom_header__last_elements">
-                <div  class="footer_section__bottom_header__last_elements__container">
-                    <a class="footer_section__bottom_header__last_elements__container__appli" href="mailto:Victoria.briol@student.hepl.be"><img src="./public/img/computer/outlook_icone.svg"
-                                                                                                                                     alt="logo de l'application Outlook"></a>
-                    <a class="footer_section__bottom_header__last_elements__container__appli" href="mailto:Victoriabriol5@gmail.com"><img src="./public/img/computer/mail_icone.svg"
-                                                                                                                               alt="logo de l'application mail"></a>
-                    <a class="footer_section__bottom_header__last_elements__container__appli" href="https://github.com/BriolVictoria"><img src="./public/img/computer/github_logo.svg"
-                                                                                                                                alt="logo de l'application github"></a>
-                    <a class="footer_section__bottom_header__last_elements__container__appli" href="https://discord.com"><img src="./public/img/computer/discord_icone.svg"
-                                                                                                                   alt="logo de l'application discord"></a>
-                    <a class="footer_section__bottom_header__last_elements__container__appli" href="https://www.instagram.com/victoria_briol/"><img src="./public/img/computer/insta_icone.svg"
-                                                                                                                                         alt="logo de l'application insta"></a>
-                    <a class="footer_section__bottom_header__last_elements__container__appli" href="www.facebook.com/"><img src="./public/img/computer/facebook_icone.svg"
-                                                                                                                 alt="logo de l'application facebook"></a>
+                <div class="footer_section__bottom_header__last_elements__container">
+                    <a class="footer_section__bottom_header__last_elements__container__appli"
+                       href="mailto:Victoria.briol@student.hepl.be"><img src="./public/img/computer/outlook_icone.svg"
+                                                                         alt="logo de l'application Outlook"></a>
+                    <a class="footer_section__bottom_header__last_elements__container__appli"
+                       href="mailto:Victoriabriol5@gmail.com"><img src="./public/img/computer/mail_icone.svg"
+                                                                   alt="logo de l'application mail"></a>
+                    <a class="footer_section__bottom_header__last_elements__container__appli"
+                       href="https://github.com/BriolVictoria"><img src="./public/img/computer/github_logo.svg"
+                                                                    alt="logo de l'application github"></a>
+                    <a class="footer_section__bottom_header__last_elements__container__appli"
+                       href="https://discord.com"><img src="./public/img/computer/discord_icone.svg"
+                                                       alt="logo de l'application discord"></a>
+                    <a class="footer_section__bottom_header__last_elements__container__appli"
+                       href="https://www.instagram.com/victoria_briol/"><img src="./public/img/computer/insta_icone.svg"
+                                                                             alt="logo de l'application insta"></a>
+                    <a class="footer_section__bottom_header__last_elements__container__appli"
+                       href="www.facebook.com/"><img src="./public/img/computer/facebook_icone.svg"
+                                                     alt="logo de l'application facebook"></a>
                 </div>
 
                 <div class="footer_section__bottom_header__last_elements__down_footer">
-                    <p class="footer_section__bottom_header__last_elements__down_footer__autre">Créé à partir du site <a class="jetbrains"
+                    <p class="footer_section__bottom_header__last_elements__down_footer__autre">Créé à partir du site <a
+                            class="jetbrains"
                             href="https://www.jetbrains.com/phpstorm/">JetBrains</a></p>
-                    <p class="footer_section__bottom_header__last_elements__down_footer__copyright">© 2025 Victoria Briol (CV). Tous droit réservé. Créé par Victoria Briol</p>
+                    <p class="footer_section__bottom_header__last_elements__down_footer__copyright">© 2025 Victoria
+                        Briol (CV). Tous droit réservé. Créé par Victoria Briol</p>
                 </div>
 
             </div>
