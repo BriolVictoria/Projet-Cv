@@ -12,6 +12,12 @@
     right: 238px;
     top: 157px;
     width: 130px;
+
+    @media (max-width: 1150px) {
+      right: 205px;
+      top: 95px;
+      width: 100px;
+    }
   }
 
   &__titre {
@@ -52,7 +58,7 @@
   }
 
   // MEDIA QUERY MOBILE
-  @media (max-width: 450px) {
+  @media (max-width: 915px) {
     background-image: url('../img/phone/image_fond_tel.svg');
     background-size: 100% auto;
     background-repeat: no-repeat;

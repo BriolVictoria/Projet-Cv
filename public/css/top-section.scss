@@ -3,7 +3,6 @@
   position: relative;
 
   &__contenu_droite {
-
     &__image_bouge {
       position: absolute;
       right: -277px;
@@ -19,33 +18,34 @@
       @media (max-width: 1277px) {
         right: -200px;
         width: 700px;
-        top: -250px;
+        top: 80px;
+        left: auto;  // Remise à auto si tu veux que left disparaisse progressivement
       }
 
       @media (max-width: 1024px) {
         right: -150px;
         width: 600px;
-        top: -200px;
+        top: 30px;
       }
 
       @media (max-width: 768px) {
-        right: -100px;
-        width: 450px;
-        top: -180px;
-      }
-
-      @media (max-width: 480px) {
         right: -60px;
-        width: 320px;
-        top: -140px;
+        width: 450px;
+        top: -30px;
       }
 
-      // === MEDIA QUERY 450px ===
+      @media (max-width: 540px) {
+        right: -141px;
+        width: 572px;
+        top: -26px;
+        left: auto;
+      }
+
       @media (max-width: 450px) {
-        right: 85px !important;  // Valeurs spécifiques que tu as données
+        right: 85px !important;
         top: -170px !important;
         left: -225px !important;
-        width: auto !important; // Pour reset width des media précédents
+        width: auto !important;
       }
     }
 
@@ -59,9 +59,25 @@
         top: 250px;
       }
 
-      // === MEDIA QUERY 450px ===
+      @media (max-width: 1024px) {
+        right: 80px;
+        top: 220px;
+      }
+
+      @media (max-width: 768px) {
+        right: 60px;
+        top: 180px;
+      }
+
+      @media (max-width: 540px) {
+        right: 95px;
+        width: 60px;
+        top: 200px;
+        left: auto;
+      }
+
       @media (max-width: 450px) {
-        right: 320px !important;  // Valeurs spécifiques mobiles
+        right: 320px !important;
         top: 105px !important;
         width: 75px !important;
       }
@@ -81,7 +97,11 @@
       margin-bottom: 30px;
     }
 
-    // === MEDIA QUERY 450px ===
+    @media (max-width: 768px) {
+      margin-left: 40px;
+      margin-top: 80px;
+    }
+
     @media (max-width: 450px) {
       font-size: 35px !important;
       font-weight: 600 !important;
@@ -101,9 +121,14 @@
     @media (max-width: 1277px) {
       margin-left: 80px;
       margin-bottom: 30px;
+      font-size: 70px;
     }
 
-    // === MEDIA QUERY 450px ===
+    @media (max-width: 768px) {
+      font-size: 55px;
+      margin-left: 40px;
+    }
+
     @media (max-width: 450px) {
       font-size: 42px !important;
       font-weight: 600 !important;
@@ -123,9 +148,14 @@
     @media (max-width: 1277px) {
       margin-left: 80px;
       margin-bottom: 40px;
+      font-size: 22px;
     }
 
-    // === MEDIA QUERY 450px ===
+    @media (max-width: 768px) {
+      margin-left: 40px;
+      font-size: 20px;
+    }
+
     @media (max-width: 450px) {
       font-size: 23px !important;
       font-weight: 200 !important;
@@ -137,6 +167,7 @@
 
   &__bouton_et_description {
     display: flex;
+
     @media (max-width: 540px) {
       display: block;
     }
@@ -156,7 +187,10 @@
         margin-bottom: 40px;
       }
 
-      // === MEDIA QUERY 450px ===
+      @media (max-width: 768px) {
+        margin-left: 40px;
+      }
+
       @media (max-width: 450px) {
         margin-left: 14px !important;
         margin-bottom: 18px !important;
@@ -177,7 +211,6 @@
         margin-bottom: 40px;
       }
 
-      // === MEDIA QUERY 450px ===
       @media (max-width: 450px) {
         margin-left: 22px !important;
         margin-bottom: 56px !important;
