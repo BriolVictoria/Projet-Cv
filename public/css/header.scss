@@ -3,6 +3,11 @@ header {
   background-color: var(--fond-header);
 }
 
+body {
+  max-width: 2000px;
+  margin: auto;
+}
+
 //Le haut du header
 .top_header {
   border-bottom: 1px var(--nav) solid;

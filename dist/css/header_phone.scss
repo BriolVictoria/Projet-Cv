@@ -1,0 +1,197 @@
+.footer_section {
+  &__more_info {
+    &__contenu_droite {
+      &__titre {
+        font-size: 35px;
+        font-weight: 600;
+        margin-left: 14px;
+        width: 75%;
+        margin-top: 0;
+      }
+
+      &__bouton {
+        font-size: 20px;
+        font-weight: 400;
+        margin-left: 14px;
+        background-color: var(--blanc);
+        color: var(--noir);
+        padding: 20px 41px;
+        margin-top: 23px;
+        border-radius: 37px;
+        text-decoration: none;
+      }
+    }
+
+    &__contenu_gauche {
+      &__titre_contact {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 34px;
+        margin-left: 14px;
+        padding-top: 23px;
+      }
+
+      &__container {
+        display: flex;
+        margin-top: 32px;
+
+        &__image {
+          margin-right: 14px;
+        }
+
+        &__lien {
+          font-size: 16px;
+          font-weight: 400;
+          text-decoration: none;
+          color: var(--white);
+        }
+      }
+
+    }
+
+  }
+
+  &__bottom_header {
+    &__container {
+      &__faq {
+        &__titre {
+          font-size: 30px;
+          font-weight: 600;
+          margin-left: 14px;
+          margin-top: 45px;
+          margin-bottom: 23px;
+        }
+
+        &__question {
+          font-size: 22px;
+          font-weight: 400;
+          margin-left: 14px;
+          margin-bottom: 31px;
+          margin-top: 0;
+        }
+      }
+
+      &__form {
+        margin-top: 241px;
+        background-color: var(--fond-gris);
+        padding-bottom: 160px;
+        border-bottom: var(--gris-moyen) 1px solid;
+
+        &__titre {
+          font-size: 30px;
+          font-weight: 600;
+          padding-top: 42px;
+          margin-left: 14px;
+          margin-bottom: 56px;
+        }
+
+        &__container {
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+          margin-bottom: 12px;
+          margin-left: 14px;
+
+          &__champs {
+            font-size: 18px;
+            font-weight: 400;
+            margin-left: 14px;
+          }
+
+          &__input {
+            width: 357px;
+            background-color: var(--gris);
+            border: none;
+            min-height: 40px;
+            padding-left: 10px;
+            color: var(--gris-clair);
+          }
+
+          &__input::placeholder {
+            color: var(--gris-clair);
+          }
+
+          textarea {
+            padding-top: 10px;
+
+          }
+        }
+
+        &__button {
+          font-size: 16px;
+          font-weight: 600;
+          background-color: var(--blanc);
+          color: var(--noir);
+          padding: 15px 30px;
+          margin-top: 23px;
+          border-radius: 37px;
+          border: none;
+          margin-left: 14px;
+        }
+
+      }
+    }
+
+    &__ressources {
+      background-color: var(--fond-gris);
+      margin-top: 0;
+      border-bottom: var(--gris-moyen) 1px solid;
+      padding-bottom: 116px;
+
+      &__titre {
+        margin-top: 0;
+        padding-top: 61px;
+        margin-left: 14px;
+        color: var(--gris-titre);
+      }
+
+      &__liens {
+        display: flex;
+        flex-direction: column;
+
+        &__lien {
+          text-decoration: none;
+          color: var(--gris-texte);
+          margin-left: 14px;
+          margin-bottom: 2px;
+        }
+      }
+    }
+
+    &__last_elements {
+      background-color: var(--fond-gris);
+      margin-top: 0;
+
+      &__container {
+        padding-top: 37px;
+        margin-left: 14px;
+
+        &__appli {
+          margin-right: 10px;
+        }
+      }
+
+      &__down_footer {
+        display: flex;
+        flex-direction: column; // ← empile les éléments verticalement
+        align-items: flex-start;
+
+        &__copyright, &__autre {
+          font-size: 13px;
+          font-weight: 400;
+          color: var(--gris-texte);
+          margin: 5px 10px;
+
+        }
+
+        &__copyright {
+          margin-left: 10px; // aligne à gauche
+        }
+
+        &__autre {
+          margin-right: 10px; // aligne à droite
+        }
+      }
+    }
+  }
+}

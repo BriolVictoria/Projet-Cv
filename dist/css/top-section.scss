@@ -1,0 +1,223 @@
+.top_section {
+  overflow: hidden;
+  position: relative;
+
+  &__contenu_droite {
+    &__image_bouge {
+      position: absolute;
+      right: -277px;
+      top: -290px;
+      left: 842px;
+      z-index: -1;
+
+      @media (max-width: 1440px) {
+        right: -240px;
+        width: 850px;
+      }
+
+      @media (max-width: 1277px) {
+        right: -200px;
+        width: 700px;
+        top: 80px;
+        left: auto;  // Remise à auto si tu veux que left disparaisse progressivement
+      }
+
+      @media (max-width: 1024px) {
+        right: -150px;
+        width: 600px;
+        top: 30px;
+      }
+
+      @media (max-width: 768px) {
+        right: -60px;
+        width: 450px;
+        top: -30px;
+      }
+
+      @media (max-width: 540px) {
+        right: -141px;
+        width: 572px;
+        top: -26px;
+        left: auto;
+      }
+
+      @media (max-width: 450px) {
+        right: 85px !important;
+        top: -170px !important;
+        left: -225px !important;
+        width: auto !important;
+      }
+    }
+
+    &__logo_site {
+      position: absolute;
+      right: 140px;
+      top: 140px;
+
+      @media (max-width: 1277px) {
+        right: 100px;
+        top: 250px;
+      }
+
+      @media (max-width: 1024px) {
+        right: 80px;
+        top: 220px;
+      }
+
+      @media (max-width: 768px) {
+        right: 60px;
+        top: 180px;
+      }
+
+      @media (max-width: 540px) {
+        right: 95px;
+        width: 60px;
+        top: 200px;
+        left: auto;
+      }
+
+      @media (max-width: 450px) {
+        right: 320px !important;
+        top: 105px !important;
+        width: 75px !important;
+      }
+    }
+  }
+
+  &__titre {
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 148px;
+    margin-left: 116px;
+    margin-bottom: 40px;
+
+    @media (max-width: 1277px) {
+      margin-left: 80px;
+      margin-top: 100px;
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 768px) {
+      margin-left: 40px;
+      margin-top: 80px;
+    }
+
+    @media (max-width: 450px) {
+      font-size: 35px !important;
+      font-weight: 600 !important;
+      margin-top: 195px !important;
+      margin-left: 14px !important;
+      margin-bottom: 21px !important;
+    }
+  }
+
+  &__job_description {
+    font-size: 96px;
+    font-weight: 600;
+    margin-left: 116px;
+    margin-bottom: 45px;
+    margin-top: 0;
+
+    @media (max-width: 1277px) {
+      margin-left: 80px;
+      margin-bottom: 30px;
+      font-size: 70px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 55px;
+      margin-left: 40px;
+    }
+
+    @media (max-width: 450px) {
+      font-size: 42px !important;
+      font-weight: 600 !important;
+      margin-left: 14px !important;
+      margin-bottom: 45px !important;
+      margin-top: 0 !important;
+    }
+  }
+
+  &__precision_description {
+    font-size: 26px;
+    font-weight: 200;
+    margin-left: 116px;
+    margin-bottom: 52px;
+    margin-top: 0;
+
+    @media (max-width: 1277px) {
+      margin-left: 80px;
+      margin-bottom: 40px;
+      font-size: 22px;
+    }
+
+    @media (max-width: 768px) {
+      margin-left: 40px;
+      font-size: 20px;
+    }
+
+    @media (max-width: 450px) {
+      font-size: 23px !important;
+      font-weight: 200 !important;
+      margin-left: 14px !important;
+      margin-bottom: 52px !important;
+      margin-top: 0 !important;
+    }
+  }
+
+  &__bouton_et_description {
+    display: flex;
+
+    @media (max-width: 540px) {
+      display: block;
+    }
+
+    &__bouton_projets {
+      text-decoration: none;
+      color: var(--noir);
+      background-color: var(--blanc);
+      padding: 10.5px 20px;
+      border-radius: 37px;
+      font-weight: 400;
+      margin-left: 116px;
+      margin-bottom: 66px;
+
+      @media (max-width: 1277px) {
+        margin-left: 80px;
+        margin-bottom: 40px;
+      }
+
+      @media (max-width: 768px) {
+        margin-left: 40px;
+      }
+
+      @media (max-width: 450px) {
+        margin-left: 14px !important;
+        margin-bottom: 18px !important;
+        color: var(--noir) !important;
+        background-color: var(--blanc) !important;
+      }
+    }
+
+    &__languages_description {
+      margin-bottom: 52px;
+      margin-left: 22px;
+      margin-top: 0;
+      font-size: 24px;
+      font-weight: 300;
+
+      @media (max-width: 1277px) {
+        margin-left: 15px;
+        margin-bottom: 40px;
+      }
+
+      @media (max-width: 450px) {
+        margin-left: 22px !important;
+        margin-bottom: 56px !important;
+        margin-top: 18px !important;
+        font-size: 24px !important;
+        font-weight: 300 !important;
+      }
+    }
+  }
+}
